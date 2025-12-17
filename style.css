@@ -30,8 +30,8 @@ p {
     gap: 20px;
 
     background-color: rgb(227, 227, 227);
-    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15),
-                0px -5px 20px inset rgba(0, 0, 0, 0.4);    
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2),
+                0px -10px 20px inset rgba(0, 0, 0, 0.4);    
 }
 
 #header {
@@ -108,7 +108,7 @@ p {
     border-radius: 6px;
 
     background-color: rgb(234, 240, 236);
-    box-shadow: 0px 3px 40px inset rgba(19, 19, 19, 0.1);
+    box-shadow: 0px 2px 40px inset rgba(51, 67, 37, 0.2);
 
     color: rgba(0, 0, 0, 0.609);
     font-family: "Sixtyfour", sans-serif;
@@ -121,10 +121,20 @@ p {
 }
 #labelPrev {
     font-size: 10px;
+
 }
+
+#labelPrev:empty {
+    visibility: hidden;
+}
+
 
 #labelCurrent {
     font-size: 24px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .controlPanel {
@@ -146,12 +156,12 @@ button {
     border-radius: 12px;
 
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2),
-                0px -3px 6px inset rgba(0, 0, 0, 0.25);
+                0px -4px 5px inset rgba(0, 0, 0, 0.2);
 
     font-family: "IBM Plex Mono", monospace;
     font-weight: normal;
     font-style: normal;
-    padding-bottom: 6px;
+    padding-bottom: 8px;
 
     transition: filter 150ms ease, transform 100ms ease;
 }
