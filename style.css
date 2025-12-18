@@ -18,16 +18,18 @@ p {
 #calculatorBody {
     display: flex;
     flex-direction: column;
-    width: 400px;
-    height: 680px;
+    width: min(92vw, 400px);
+    height: min(90vh, 680px);
+    aspect-ratio: 400 / 650;
     box-sizing: border-box;
     
     border: 0.5px solid rgba(0, 0, 0, 0.2);
     border-radius: 16px;
-    padding: 30px;
-    padding-bottom: 45px;
-    padding-top: 15px;
-    gap: 20px;
+    padding: clamp(16px, 4vw, 30px);
+    padding-bottom: clamp(16px, 4vw, 45px);
+    padding-top: clamp(16px, 4vw, 15px);
+    gap: clamp(12px, 3vw, 20px);
+
 
     background-color: rgb(236, 236, 236);
     

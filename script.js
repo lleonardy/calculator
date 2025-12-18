@@ -55,7 +55,7 @@ btnOperators.forEach(button => {
             previousNumber = result.toString();
             currentNumber = "";
             currentDisplay.textContent = result;
-        } else {
+        } else if (previousNumber === "") {
             previousNumber = currentNumber;
             currentNumber = "";
         }
